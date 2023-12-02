@@ -2,7 +2,8 @@
   "name": "imlib",
   "version": "2.0.0",
   "description": "Next-gen front-end framework.",
-  "type": "module",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
   "scripts": {
     "build": "tsc --build",
     "watch": "tsc --build --watch",
