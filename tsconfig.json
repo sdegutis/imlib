@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "composite": true,
     "target": "ES2022", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "lib": [
       "ES2020",
@@ -10,10 +9,10 @@
     "module": "CommonJS", /* Specify what module code is generated. */
     "declaration": true,
     "allowSyntheticDefaultImports": false,
-    "rootDir": "./", /* Specify the root folder within your source files. */
+    "rootDir": "./src", /* Specify the root folder within your source files. */
     "moduleResolution": "node", /* Specify how TypeScript looks up a file from a given module specifier. */
     "sourceMap": true, /* Create source map files for emitted JavaScript files. */
-    "outDir": "../out", /* Specify an output folder for all emitted files. */
+    "outDir": "./out", /* Specify an output folder for all emitted files. */
     // "importHelpers": true, /* Allow importing helper functions from tslib once per project, instead of including them per-file. */
     "importsNotUsedAsValues": "remove", /* Specify emit/checking behavior for imports that are only used for types */
     // "noEmitHelpers": true,                            /* Disable generating custom helper functions like `__extends` in compiled output. */
@@ -30,8 +29,5 @@
     "noImplicitOverride": true, /* Ensure overriding members in derived classes are marked with an override modifier. */
     "noPropertyAccessFromIndexSignature": true, /* Enforces using indexed accessors for keys declared using an indexed type */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
-  },
-  "include": [
-    "src/*.ts"
-  ]
+  }
 }
