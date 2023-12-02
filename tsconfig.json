@@ -1,20 +1,25 @@
 {
   "compilerOptions": {
+    "composite": true,
+    "target": "ES2022", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "lib": [
       "ES2020",
       "DOM",
       "DOM.Iterable"
-    ],
-    "jsx": "react-native",
-    "target": "ES2022",
-    "noEmit": true,
+    ], /* Specify a set of bundled library declaration files that describe the target runtime environment. */
+    "module": "CommonJS", /* Specify what module code is generated. */
+    "declaration": true,
     "allowSyntheticDefaultImports": false,
-    "moduleResolution": "Node",
-    "module": "ES2022",
+    "rootDir": "./", /* Specify the root folder within your source files. */
+    "moduleResolution": "node", /* Specify how TypeScript looks up a file from a given module specifier. */
+    "sourceMap": true, /* Create source map files for emitted JavaScript files. */
+    "outDir": "../out", /* Specify an output folder for all emitted files. */
+    // "importHelpers": true, /* Allow importing helper functions from tslib once per project, instead of including them per-file. */
+    "importsNotUsedAsValues": "remove", /* Specify emit/checking behavior for imports that are only used for types */
+    // "noEmitHelpers": true,                            /* Disable generating custom helper functions like `__extends` in compiled output. */
     "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */
     "strict": true, /* Enable all strict type-checking options. */
     "noImplicitAny": true, /* Enable error reporting for expressions and declarations with an implied `any` type.. */
-    "downlevelIteration": true,
     // "noUnusedLocals": true,                           /* Enable error reporting when a local variables aren't read. */
     // "noUnusedParameters": true,                       /* Raise an error when a function parameter isn't read */
     "exactOptionalPropertyTypes": true, /* Interpret optional property types as written, rather than adding 'undefined'. */
@@ -24,17 +29,9 @@
     "noUncheckedIndexedAccess": true, /* Include 'undefined' in index signature results */
     "noImplicitOverride": true, /* Ensure overriding members in derived classes are marked with an override modifier. */
     "noPropertyAccessFromIndexSignature": true, /* Enforces using indexed accessors for keys declared using an indexed type */
-    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
   "include": [
-    "./site/**/*.ts",
-    "./site/**/*.d.ts",
-    "./site/**/*.tsx",
-    "./global.d.ts"
-  ],
-  "references": [
-    {
-      "path": "./src"
-    }
+    "src/*.ts"
   ]
 }

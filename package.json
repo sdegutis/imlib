@@ -1,35 +1,30 @@
 {
-  "name": "immaculatalibrary",
+  "name": "imlib",
   "version": "2.0.0",
-  "description": "My website.",
-  "module": "out/main.js",
+  "description": "Next-gen front-end framework.",
+  "type": "module",
   "scripts": {
-    "generate": "node --experimental-vm-modules out/generate.js",
     "build": "tsc --build",
     "watch": "tsc --build --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sdegutis/immaculatalibrary.com.git"
+    "url": "git+https://github.com/sdegutis/imlib.git"
   },
   "keywords": [],
   "author": "Steven Degutis",
-  "license": "Custom MIT",
+  "license": "Custom",
   "bugs": {
-    "url": "https://github.com/sdegutis/immaculatalibrary.com/issues"
+    "url": "https://github.com/sdegutis/imlib/issues"
   },
-  "homepage": "https://github.com/sdegutis/immaculatalibrary.com#readme",
+  "homepage": "https://github.com/sdegutis/imlib#readme",
   "devDependencies": {
-    "@types/js-yaml": "^4.0.8",
-    "@types/markdown-it": "^13.0.4",
     "@types/node": "^20.8.7",
     "typescript": "^5.2.2"
   },
   "dependencies": {
     "chokidar": "^3.5.3",
-    "js-yaml": "^4.1.0",
-    "markdown-it": "^13.0.2",
     "sucrase": "^3.34.0"
   }
 }
